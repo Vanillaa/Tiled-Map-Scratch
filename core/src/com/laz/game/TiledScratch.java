@@ -4,19 +4,16 @@ import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
-import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
-import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.maps.tiled.TiledMap;
 import com.badlogic.gdx.maps.tiled.TiledMapRenderer;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+//http://www.gamefromscratch.com/post/2014/04/16/LibGDX-Tutorial-11-Tiled-Maps-Part-1-Simple-Orthogonal-Maps.aspx
 
 public class TiledScratch extends ApplicationAdapter implements InputProcessor{
 	Texture img;
@@ -37,7 +34,6 @@ public class TiledScratch extends ApplicationAdapter implements InputProcessor{
 		camera = new OrthographicCamera();
 		camera.setToOrtho(false, fwidth, fheight);
 		//camera.setToOrtho(false, nMapWidth, nMapHeight);
-
 
 		tiledMapRenderer = new OrthogonalTiledMapRenderer(testmap);
 		Gdx.input.setInputProcessor(this);
@@ -61,6 +57,7 @@ public class TiledScratch extends ApplicationAdapter implements InputProcessor{
 
 	@Override
 	public boolean keyUp(int keycode) {
+		//maybe wont need this if we are just going to move the character on the map, and not have the map moving.
 		if(keycode == Input.Keys.LEFT)
 			camera.translate(-32,0);
 		if(keycode == Input.Keys.RIGHT)
