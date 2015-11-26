@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="23" height="7" tilewidth="32" tileheight="32" nextobjectid="15">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="23" height="8" tilewidth="32" tileheight="32" nextobjectid="1">
  <tileset firstgid="1" name="Tileset" tilewidth="32" tileheight="32" tilecount="256">
   <image source="../../../../tileset.png" width="512" height="512"/>
  </tileset>
- <layer name="Tile Layer 1" width="23" height="7">
+ <layer name="Tile Layer 1" width="23" height="8">
   <data encoding="base64" compression="zlib">
-   eJzzZ2Bg8KcBDgDieCpgfyxiCUAsP4oxMCzcaYFh4U4LDACb6ye+
+   eJxjYBgF6MCfRjiABjgeyWxcdhLrNnQxdLP5aYRB9sjTCAMAu/QaJw==
   </data>
  </layer>
- <layer name="plants" width="23" height="7">
+ <layer name="plants" width="23" height="8">
   <data encoding="base64" compression="zlib">
-   eJxjYICAeCSMC5QCcRkeeWRzQGAFCWa3AnEbkWbPIKCOFHCGBLV/STT7DonqpwLxNCCeTqIcDOALl6VAvAyIl5MoBwIrcIjDwFYg3gbE29HE4/HIIQMAFUMW3Q==
+   eJy1zDtOAgEUhlEQpBfRHhB6ni2RV8+z5+UOYAe4OGEFwgpwB9h4iikmhGIyGf/k5DY3XyoVb2keyJDlkVzM1u2eyPNMgRdeE2oXKVHmjQrVhNo16jRo0qLNF4c7/1t2EdvvdOnRZ8CQb06hv2Nw93xGbI8YM2HKjDkXfoKfDueIvfAWLFmxZsMHV35D7f/aH7PZE6Q=
   </data>
  </layer>
- <objectgroup name="rocks">
-  <object id="2" x="572" y="66" width="38" height="69">
-   <ellipse/>
-  </object>
-  <object id="14" x="192" y="95" width="35" height="37">
-   <ellipse/>
-  </object>
- </objectgroup>
 </map>
